@@ -78,7 +78,6 @@ def scrape_and_store_data(url):
 
             image_firestore_url = blob.generate_signed_url(timedelta(seconds=999999999), method='GET')
 
-
             # Firestore'a veriyi kaydedin
             data = {
                 'blog': url,
